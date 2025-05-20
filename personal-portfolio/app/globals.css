@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
+@plugin "tailwind-scrollbar";
 
 @theme{
 
@@ -71,4 +71,10 @@ h4{
 .swiper{
   margin: 0 !important;
   margin-right: 20px !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets, 
+.swiper-pagination-horizontal.swiper-pagination-bullets 
+.swiper-pagination-bullets{
+  @apply bg-accent;
 }
